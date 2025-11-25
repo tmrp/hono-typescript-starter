@@ -40,6 +40,7 @@ The API will be available at `http://localhost:3000`
 
 ## 📂 Project Structure
 
+```bash
 .
 ├── src/
 │ ├── routes/ # API route handlers
@@ -58,6 +59,7 @@ The API will be available at `http://localhost:3000`
 ├── package.json # Dependencies and scripts
 ├── tsconfig.json # TypeScript configuration
 └── README.md # This file
+```
 
 ## 🛠️ Available Scripts
 

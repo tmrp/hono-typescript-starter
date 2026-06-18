@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
-    "@types/node": "^22.10.2",
+    "@types/node": "^25",
     "@vitest/coverage-v8": "^2.1.8",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
@@ -34,5 +34,9 @@
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.1",
     "vitest": "^2.1.9"
+  },
+  "packageManager": "pnpm@11.4.0",
+  "engines": {
+    "node": "24"
   }
 }

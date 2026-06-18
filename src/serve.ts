@@ -2,4 +2,11 @@ import { serve } from "@hono/node-server";
 
 import app from "./app.js";
 
-serve({ fetch: app.fetch, port: 3000 });
+const port = Number(process.env.PORT) || 3000;
+
+console.log(`🔥 Server running on http://localhost:${port}`);
+
+serve({
+  fetch: app.fetch,
+  port,
+});

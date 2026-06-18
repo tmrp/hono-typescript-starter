@@ -4,8 +4,10 @@ import { z } from "zod";
 
 const users = new Hono();
 
+const MOCK_USER_STORE = [{ id: "user-id-0", name: "Test User", email: "test-user@example.com" }];
+
 // In-memory storage (replace with database)
-const userStore: Array<{ id: string; name: string; email: string }> = [];
+let userStore = MOCK_USER_STORE;
 
 // Validation schemas
 const createUserSchema = z.object({
@@ -20,7 +22,7 @@ const updateUserSchema = z.object({
 
 // GET all users
 users.get("/", c => {
-  return c.json({ users: userStore });
+  return c.json({ users: MOCK_USER_STORE });
 });
 
 // GET user by ID

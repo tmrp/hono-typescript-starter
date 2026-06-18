@@ -37,4 +37,4 @@ serve({
   port,
 });
 
-export { app };
+export default app;

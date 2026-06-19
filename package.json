@@ -22,7 +22,7 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@eslint/js": "^9.16.0",
+    "@eslint/js": "^10.0.1",
     "@types/node": "^25",
     "@vitest/coverage-v8": "^2.1.8",
     "eslint": "^9.16.0",
